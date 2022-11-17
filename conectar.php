@@ -2,7 +2,7 @@
 
 $usuario = 'edu';
 $senha = '123456';
-$database = 'apple';
+$database = 'resgateanimais';
 $host = 'localhost';
 
 

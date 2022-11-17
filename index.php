@@ -16,7 +16,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
         //consulta no banco onde será verificado o e-mail na tabela conforme o e-mail digitado
-        $sql_code = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";
+        $sql_code = "SELECT * FROM usuário WHERE email = '$email' AND senha = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
         //variavel quantidade será responsável por verificar se houve registros na consulta executada no banco
@@ -27,7 +27,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             
             //verifica o privilégio de cada usuário
             while ($percorrer = mysqli_fetch_array($sql_query))
-            $adm = $percorrer['privilegio'];
+            $adm = $percorrer['privilégio'];
            /* if($adm == 1){
                 echo 'USER ADM';
             }else if ($adm > 1){
@@ -45,15 +45,15 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
                 switch($adm){
                     case 1:
-                        header("Location: projeto.html");
+                        header("Location: index.html");
                         break;
 
                     case 2:
-                        header("Location: projeto.html");
+                        header("Location: ong.html");
                         break;
 
                     case 3:
-                        header("Location: project.php");
+                        header("Location: admin.html");
                         break;
 
                     default:
@@ -82,6 +82,29 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <title>Login</title>
 </head>
 <body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBbmQv9eV4i6r-rKZ-v84fmzfgUkc0nHuc",
+    authDomain: "project-lab-eng-soft.firebaseapp.com",
+    projectId: "project-lab-eng-soft",
+    storageBucket: "project-lab-eng-soft.appspot.com",
+    messagingSenderId: "333224040039",
+    appId: "1:333224040039:web:2188deca394937296ea6c2",
+    measurementId: "G-2E4QQB3KKE"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
     <h1>Acesse sua conta</h1>
     <form action="" method="POST">
         <p>
@@ -95,6 +118,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <p>
             <button type="submit">Entrar</button>
         </p>
+
     </form>
 </body>
 </html>
