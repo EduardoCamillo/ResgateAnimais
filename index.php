@@ -45,7 +45,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
                 switch($adm){
                     case 1:
-                        header("Location: index.html");
+                        header("Location: comum.php");
                         break;
 
                     case 2:
