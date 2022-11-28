@@ -43,6 +43,7 @@ if(isset($_FILES['arquivo'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Pagina Usuário Comumn</title>
 </head>
 <body>
@@ -53,5 +54,6 @@ if(isset($_FILES['arquivo'])){
             <label for="">Selecione o arquivo</label>
           <p>  <input name="arquivo" type="file">
             <button type="submit"> Enviar Arquivo </Button></p>
+            
 </body>
 </html>
