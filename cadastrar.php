@@ -10,12 +10,13 @@
         } else {
             $email = $_POST['email'];
             $senha = $_POST['senha'];
+            $nome = $_POST['nome'];
             echo "Olá mundo!";
             /*//$email = $_POST['email'];
             $sql_code = "INSERT INTO usuário (id, nome, email, senha, privilégio) VALUES (NULL,'Eduzaao', '$email', '$senha', '1') ";
             $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
         */
-        $mysqli->query("INSERT INTO usuário (nome, email, senha, privilégio) VALUES ( 'Eduzinho', '$email', $senha, '1') ") or die($mysqli->$error);
+        $mysqli->query("INSERT INTO usuário (nome, email, senha, privilégio) VALUES ( '$nome', '$email', $senha, '1') ") or die($mysqli->$error);
         echo "<p> Usuário cadastrado com sucesso!</p>";
         }
     } 
@@ -47,7 +48,7 @@
             <input type="text" name="nome">
         <p>
             <button type="submit">Cadastrar</button>
-           
+           <a href="index.php"> Efetuar Login </a>
         </p>    
 </body>
 </html>

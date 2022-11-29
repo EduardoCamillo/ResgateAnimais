@@ -117,8 +117,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         </p>
         <p>
             <button type="submit">Entrar</button>
-        </p>
-
+            <a href="cadastrar.php"> Cadastre-se </a>
+        </p>    
     </form>
 </body>
 </html>
