@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Rowdies', cursive;
+}
+
+
+/**Boot CSS**/
+
+img{
+    width: 100%;
+    max-width: 1366px;
+}
+
+
+
+
+
+.center{
+    max-width: 1366xp;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33{
+    width: 33.3%;
+    padding: 0 10px;
+}
+.w50{
+    padding: 0 10px;
+    width: 50%;
+}
+
+.left{
+    float: left;
+    
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+h2.senhorianha{
+    align-items:left
+}
+
+
+
+/**comeco*/
+#slider-wrapper {
+    width: 1349px;
+    height: 600px;
+    margin: 0px auto;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  #s1 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s2 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s3 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s4 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover {
+    opacity: .50;
+  }
+  
+  .inner-wrapper {
+    width: 1366px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  .control {
+    display: none;
+  }
+  
+  #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+  
+  #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+  
+  #Slide1:checked + #s1 {
+    opacity: 1;
+  }
+  
+  #Slide2:checked + #s2 {
+    opacity: 1;
+  }
+  
+  #Slide3:checked + #s3 {
+    opacity: 1;
+  }
+  
+  #Slide4:checked + #s4 {
+    opacity: 1;
+  }
+  
+  .overflow-wrapper {
+    
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slide img {
+  float: left;
+  }
+/**fim*/
+  
+
+
+.especialidades3 h2{
+background-color: aquamarine;
+font-size: 30px;
+text-align: center;
+font-weight: 400;
+color: #000000;
+
+}
+
+/**Estilização do site**/
+header{
+    padding: 20px 20px;
+    background: #3D437A;
+}
+
+header .logo{
+    font-size: 23px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.mobile{
+    display: none;
+}
+nav.desktop ul{
+    position: relative;
+    top: 6px;
+    list-style-type: none;
+}
+nav.desktop li{
+    font-weight: 300;
+    font-size: 15px;
+    padding:0 30px;
+    text-transform: uppercase;
+   display: inline-block;
+}
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    transition: 1s;
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+
+
+section.banner-principal{
+    width: 1366xp;
+    height: 650px;
+    background-image: url('../imagem/SPAfundo.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1366xp;
+    height: 100%;
+    background-color: rgba(51,51,51,0.3);
+    z-index: 1;
+}
+
+section.banner-principal form{
+    width: 1366xp;
+    max-width: 650px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+section.banner-principal form h2{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    
+        
+}
+
+
+
+section.banner-principal form input[type=email]{
+    width: 1366xp;
+    height: 66x;
+    margin-top: 10px; 
+    background: white;
+    color: #333;
+    font-size: 22px;
+    padding-left: 10px;
+    
+}
+
+section.banner-principal form input[type=submit]{
+    width: 1366xp;
+    height: 66x;
+    margin-top: 10px; 
+    background: #011a86;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    border: 0;
+    
+}
+
+
+section.descricao-autor{
+    padding: 40px 0;
+}
+
+section.cabecalho{
+    padding: 0px 0;
+}
+
+section.descricao-autor h2{
+    font-size: 28px;
+    font-weight: 400;
+    color: #444;
+}
+
+section.descricao-autor p{
+    font-size: 16px;
+    color: #444;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+section.especialidades{
+    padding: 40px 0;
+    background: #0bb9be;
+}
+
+section.especialidades h2.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #000000;
+}
+
+.textos_das_veia{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.box-especialidade{
+    margin: 30px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+ .depoimentos1 h2{
+color: rgb(18, 50, 78);
+ text-align: center;
+ 
+}
+
+
+.box-especialidade h3{
+    color: #000000;
+    font-size: 40px;
+}
+
+.box-especialidade h4{
+    font-weight: 300;
+    font-size: 25px;
+    color: #000000;
+    
+}
+
+.box-especialidade p{
+    
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/**idoso*/
+
+
+
+
+.box-especialidade1{
+    background-color: aquamarine;
+    margin: 0px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.box-especialidade1 h3{
+    color: #000000;
+    font-size: 40px;
+    background-color: aquamarine;
+}
+
+.box-especialidade1 h4{
+    font-weight: 300;
+    font-size: 25px;
+    color: #000000;
+    background-color: aquamarine;
+}
+
+.box-especialidade1 p{
+    
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: aquamarine;
+}
+
+/***fim*/
+
+.circle {
+    background-color: rgb(0, 0, 0);
+    border-radius: 40%;
+   
+    margin: 10px auto; 
+    
+    align-items: depoimentos1;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: sticky;
+
+  }
+  
+  .circle img {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+section.extras{
+    padding: 30px 0;
+    background:#0b8bc7; 
+}
+
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .form-contact {
+    width: 100%;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-input {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+  }
+  
+  .form-contact-textarea {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-button {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #B22222;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 1s;
+  }
+  
+  
+
+  .form-contact-button:hover {
+    opacity: 1;
+  }
+  
+
+ 
+
+section.depoimentos1{
+    padding: 30px 0;
+    background:#182492; 
+}
+
+
+  
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+  
+  
+
+  
+.depoimentos1.depoimentos h2{
+    text-align: center;
+    font-size: 30xp;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.servicos-container,.depoimentos-container{
+    padding: 0 60px;
+    color: rgb(21, 13, 58);
+}
+    .section.extras{
+        padding: 30xp 0;
+        background:#404580; 
+    }
+    
+    .servicos-container,.depoimentos-container{
+        padding: 0 60px;
+    }
+    
+    section.extras .title{
+        color: white;
+        font-weight: 300;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .depoimento-single{
+        padding: 15px 0;
+        border-bottom: 1px solid #5056A0;
+    }
+    
+    p.depoimento-descricao{
+        margin: 200px;
+        font-size: 15px;
+        color: white;
+        font-weight: 300;
+    }
+    
+    p.nome-autor{
+         font-size: 15px;
+        color: white;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .servicos ul{
+        margin: 20px 0;
+    }
+    
+    
+    .servicos li{
+        margin-bottom: 70px;
+         font-size: 15px;
+        color: white;
+        font-weight: 300;
+    }
+
+
+@media screen and (max-width: 768px){
+    img{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+    
+   
+    .w50{
+        padding: 20px;
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+     .box-especialidade{
+        padding: 40px 20px;
+        margin: 0;
+    }
+}
+
+img[src="imagem/face"]{
+    width: 160px;
+    height: 160px;
+}
+
+
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    .botao-menu-mobile{
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    nav.mobile ul{
+        top: 55px;
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: none;
+        text-align: center;
+    }
+    nav.mobile li{
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding: 8px 0;
+    }
+    nav.mobile li a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+}
+
+footer{
+    background: #0a117a;
+    padding: 30px 0;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+*{
+    box-sizing: border-box
+}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.botaoEnviar{
+  margin: 0 auto;
+  width: 350px;
+  padding: 15px 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #FCC302;
+  font-size: 18px;
+}
